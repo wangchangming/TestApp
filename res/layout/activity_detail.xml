@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="#e3e3e3"
+    tools:context=".DetailActivity" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/detailViewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <RelativeLayout
+        android:layout_width="70dip"
+        android:layout_height="70dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:descendantFocusability="blocksDescendants"
+        android:focusable="true" >
+
+        <Button
+            android:id="@+id/detailBackBtn"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_centerInParent="true"
+            android:alpha="0.4"
+            android:background="@drawable/detail_back"
+            android:clickable="false"
+            android:duplicateParentState="true"
+            android:focusable="false" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="70dip"
+        android:layout_height="70dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:descendantFocusability="blocksDescendants"
+        android:focusable="true" >
+
+        <Button
+            android:id="@+id/detailShareBtn"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_centerInParent="true"
+            android:alpha="0.4"
+            android:background="@drawable/detail_share"
+            android:clickable="false"
+            android:duplicateParentState="true"
+            android:focusable="false" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/detailIndexLy"
+        android:layout_width="50dip"
+        android:layout_height="22dip"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dip"
+        android:alpha="0.4"
+        android:background="@drawable/detail_index_bg" >
+
+        <TextView
+            android:id="@+id/detailCurrentText"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/show_text_14" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="/"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/show_text_14" />
+
+        <TextView
+            android:id="@+id/detailAllText"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/show_text_14" />
+    </LinearLayout>
+
+</RelativeLayout>

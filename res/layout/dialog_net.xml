@@ -1,0 +1,56 @@
+<!-- 网络连接，提示框 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_index_bg"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+    tools:context=".FlowActivity" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="170" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_centerInParent="true"
+            android:text="网络连接不可用，是否进行设置？"
+            android:textColor="#000000"
+            android:textSize="@dimen/show_text_16" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#dddddd" />
+
+    <LinearLayout
+       
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="140" >
+ <Button
+       android:id="@+id/dialogSetBut"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:text="设置"
+            android:textColor="#2daad0"
+            android:textSize="@dimen/show_text_16" />
+        <Button
+             android:id="@+id/dialogCloseBut"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:text="取消"
+            android:textColor="#2daad0"
+            android:textSize="@dimen/show_text_16" />
+    </LinearLayout>
+
+</LinearLayout>
