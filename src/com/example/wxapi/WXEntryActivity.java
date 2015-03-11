@@ -41,7 +41,6 @@ public class WXEntryActivity extends Activity implements IWXAPIEventHandler {
 		api = WXAPIFactory.createWXAPI(this, appId, false);
 		api.registerApp(appId);
 		api.handleIntent(getIntent(), WXEntryActivity.this);
-		// super.onCreate(savedInstanceState);
 		Intent it = super.getIntent();
 		int flag = it.getIntExtra("flag", 0);
 		String title = it.getStringExtra("title");
@@ -112,7 +111,6 @@ public class WXEntryActivity extends Activity implements IWXAPIEventHandler {
 			}
 		}
 		if (flag != 0) {
-			// System.out.println("########################"+flag);
 			if (!imageFlag) {
 				android.content.res.Resources res = getResources();
 				InputStream is = res.openRawResource(R.drawable.ic_launcher);
@@ -133,9 +131,6 @@ public class WXEntryActivity extends Activity implements IWXAPIEventHandler {
 
 	@Override
 	public void onResp(BaseResp resp) {
-		// System.out.println("!!!!!!!!!!!!!!!!resp.errCode:" + resp.errCode +
-		// ",resp.errStr:"
-		// + resp.errStr);
 		switch (resp.errCode) {
 		case BaseResp.ErrCode.ERR_OK:
 			// System.out.println("!!!!!!!!!!!!!!!!分享成功");
